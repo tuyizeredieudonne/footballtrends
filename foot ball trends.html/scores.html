@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="livescore.css">
+    <title>Live Scores</title>
+</head>
+<body>
+       <!-- Navigation Bar -->
+       <header>
+        <h1>Football Trends</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="news.html">News</a>
+            <a href="scores.html">Live Scores</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="transfer.html">Transfers</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tab-menu">
+            <button class="tab active" onclick="openTab(event, 'All')">All</button>
+            <button class="tab" onclick="openTab(event, 'PremierLeague')">Premier League</button>
+            <button class="tab" onclick="openTab(event, 'LaLiga')">La Liga</button>
+            <button class="tab" onclick="openTab(event, 'SerieA')">Serie A</button>
+            <button class="tab" onclick="openTab(event, 'Bundesliga')">Bundesliga</button>
+            <button><p><a href="https://www.livescore.com/en/">click here to see more</a></p></button>
+        </div>
+
+        <section id="All" class="tab-content active">
+            <!-- Match 1 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Manchester United</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="team">
+                    <span>Chelsea</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Match 2 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Real Madrid</span>
+                    <span class="score">3</span>
+                </div>
+                <div class="team">
+                    <span>Barcelona</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="status">Full Time</div>
+            </div>
+            <!-- Match 3 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Bayern Munich</span>
+                    <span class="score">4</span>
+                </div>
+                <div class="team">
+                    <span>Paris Saint-Germain</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Match 4 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Juventus</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="team">
+                    <span>AC Milan</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Match 5 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Atletico Madrid</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="team">
+                    <span>Sevilla FC</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Match 6 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Arsenal</span>
+                    <span class="score">3</span>
+                </div>
+                <div class="team">
+                    <span>Manchester City</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+        </section>
+
+        <section id="PremierLeague" class="tab-content">
+            <!-- Premier League Match 1 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Liverpool</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="team">
+                    <span>Arsenal</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">45'</div>
+            </div>
+            <!-- Premier League Match 2 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Tottenham Hotspur</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="team">
+                    <span>Leicester City</span>
+                    <span class="score">0</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Premier League Match 3 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Manchester United</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="team">
+                    <span>West Ham United</span>
+                    <span class="score">0</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+        </section>
+
+        <section id="LaLiga" class="tab-content">
+            <!-- La Liga Match 1 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Atletico Madrid</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="team">
+                    <span>Valencia</span>
+                    <span class="score">0</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- La Liga Match 2 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Real Madrid</span>
+                    <span class="score">3</span>
+                </div>
+                <div class="team">
+                    <span>Real Betis</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+        </section>
+
+        <section id="SerieA" class="tab-content">
+            <!-- Serie A Match 1 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Juventus</span>
+                    <span class="score">3</span>
+                </div>
+                <div class="team">
+                    <span>AC Milan</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Serie A Match 2 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Napoli</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="team">
+                    <span>Inter Milan</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+        </section>
+
+        <section id="Bundesliga" class="tab-content">
+            <!-- Bundesliga Match 1 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>Bayern Munich</span>
+                    <span class="score">4</span>
+                </div>
+                <div class="team">
+                    <span>Borussia Dortmund</span>
+                    <span class="score">2</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+            <!-- Bundesliga Match 2 -->
+            <div class="score-box">
+                <div class="team">
+                    <span>RB Leipzig</span>
+                    <span class="score">3</span>
+                </div>
+                <div class="team">
+                    <span>Wolfsburg</span>
+                    <span class="score">1</span>
+                </div>
+                <div class="status">FT</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Live Scores | All rights reserved.</p>
+    </footer>
+
+    <script src="livescore.js"></script>
+</body>
+</html>

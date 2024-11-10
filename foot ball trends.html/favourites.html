@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="favourites.css">
+    <title>Your Favourites</title>
+</head>
+<body>
+    <header>
+        <h1>Your Favourite Football Teams</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="news.html">News</a>
+            <a href="scores.html">Live Scores</a>
+            <a href="favourites.html" class="active">Favourites</a>
+            <a href="transfer.html">Transfers</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="favourites-section">
+            <h2>Favorite Teams</h2>
+            <div class="favourites-list">
+                <div class="favourite-item">
+                    <h3>Manchester United</h3>
+                    <p>Recent Performance: W-W-D-L</p>
+                    <p>Top Scorer: Marcus Rashford</p>
+                    <button class="view-button" onclick="showDetails('Manchester United')">View Details</button>
+                </div>
+                <div class="favourite-item">
+                    <h3>Barcelona</h3>
+                    <p>Upcoming Match: Sunday vs. Real Madrid</p>
+                    <p>Coach: Xavi Hernandez</p>
+                    <button class="view-button" onclick="showDetails('Barcelona')">View Details</button>
+                </div>
+                <div class="favourite-item">
+                    <h3>AC Milan</h3>
+                    <p>Key Players: Olivier Giroud, Rafael Leão</p>
+                    <p>League Position: 2nd</p>
+                    <button class="view-button" onclick="showDetails('AC Milan')">View Details</button>
+                </div>
+            </div>
+
+            <div id="details-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <h3 id="team-name"></h3>
+                    <p id="team-info"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Football Trends | All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        const teamDetails = {
+            "Manchester United": "A historic club based in Manchester, England. Known for its passionate fanbase and legendary players.",
+            "Barcelona": "A powerhouse in Spanish football with a long-standing rivalry with Real Madrid. Known for its distinct tiki-taka playstyle.",
+            "AC Milan": "One of Italy's most successful clubs, winning numerous league titles and European cups."
+        };
+
+        function showDetails(teamName) {
+            document.getElementById("team-name").innerText = teamName;
+            document.getElementById("team-info").innerText = teamDetails[teamName] || "No additional information available.";
+            document.getElementById("details-modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("details-modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>

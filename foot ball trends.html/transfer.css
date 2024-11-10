@@ -1,0 +1,227 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #f0f4f8; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Fresh green */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #388E3C; /* Darker green for emphasis */
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    color: #f4b400; /* Bright yellow for emphasis */
+    transform: scale(1.1);
+    border-bottom: 3px solid #f4b400; /* Underline effect */
+}
+
+/* Main content styling */
+main {
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    max-width: 800px;
+    width: 100%;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    opacity: 0.9;
+}
+
+h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Transfer list */
+.transfer-list,
+.rumor-list,
+.hall-of-fame-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transfer-list li,
+.rumor-list li,
+.hall-of-fame-list li {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.transfer-list li:hover,
+.rumor-list li:hover,
+.hall-of-fame-list li:hover {
+    background-color: #f4f4f4; /* Light gray background on hover */
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.transfer-list h3,
+.rumor-list h3,
+.hall-of-fame-list h3 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.transfer-list p,
+.rumor-list p,
+.hall-of-fame-list p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.transfer-list em,
+.rumor-list em,
+.hall-of-fame-list em {
+    font-style: italic;
+    color: #888;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1d3557; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #f4b400; /* Bright yellow for link emphasis */
+    text-decoration: none;
+    font-weight: 600;
+    transition: text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav a {
+        margin: 0 15px;
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .transfer-list li,
+    .rumor-list li,
+    .hall-of-fame-list li {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.transfer-list li,
+.rumor-list li,
+.hall-of-fame-list li {
+    animation: fadeIn 0.6s ease-out;
+}
